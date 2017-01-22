@@ -27,11 +27,11 @@ ro.vendor.extension_library=/vendor/lib/libqc-opt.so
 
 # Audio
 audio.offload.buffer.size.kb=32
-audio.offload.gapless.enabled=true
-av.offload.enable=true
-av.streaming.offload.enable=true
-audio.offload.pcm.16bit.enable=true
-audio.offload.pcm.24bit.enable=true
+audio.offload.gapless.enabled=false
+av.offload.enable=false
+av.streaming.offload.enable=false
+audio.offload.pcm.16bit.enable=false
+audio.offload.pcm.24bit.enable=false
 persist.audio.fluence.voicecall=true
 persist.audio.fluence.speaker=true
 ro.qc.sdk.audio.fluencetype=fluence
@@ -43,7 +43,7 @@ media.aac_51_output_enabled=true
 mm.enable.smoothstreaming=true
 
 # Camera
-camera2.portability.force_api=1
+camera2.portability.force_api=0
 
 # GPS
 persist.gps.qc_nlp_in_use=0
@@ -52,7 +52,7 @@ ro.gps.agps_provider=1
 # Graphics
 debug.composition.type=dyn
 debug.egl.hw=1
-debug.mdpcomp.logs=0
+debug.mdpcomp.logs=1
 debug.sf.hw=1
 dev.pm.dyn_samplingrate=1
 persist.hwc.mdpcomp.enable=true
@@ -60,7 +60,7 @@ ro.sf.lcd_density=320
 ro.opengles.version=196608
 
 # Input
-ro.input.noresample=1
+ro.input.noresample=0
 
 # Time services
 persist.timed.enable=true
